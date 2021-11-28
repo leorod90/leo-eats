@@ -1,2 +1,2 @@
-# leo-eats
+# Leo Eats
 my mobile app
