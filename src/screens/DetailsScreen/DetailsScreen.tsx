@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { StyleSheet, StatusBar, View } from "react-native";
+import { StyleSheet, View } from "react-native";
 import { CategoriesProps } from "../../navigation/categoriesNav/CategoriesNav";
 import { FavNavProps } from "../../navigation/favNav/FavNav";
 import { HomeNavProps } from "../../navigation/homeNav/HomeNav";

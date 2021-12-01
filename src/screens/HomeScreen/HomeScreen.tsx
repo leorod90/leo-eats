@@ -39,6 +39,10 @@ export default function HomeScreen({
   };
 
   useEffect(() => {
+    splash();
+  }, []);
+
+  useEffect(() => {
     let newData = data;
 
     if (mealIndex !== 0) {
@@ -52,7 +56,6 @@ export default function HomeScreen({
       );
     }
     setSearchData(newData);
-    splash();
   }, [text, mealIndex]);
 
   return (

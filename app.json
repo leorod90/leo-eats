@@ -4,7 +4,7 @@
     "slug": "leo_eats",
     "privacy": "public",
     "description": "Recipe Test App",
-    "version": "1.3.0",
+    "version": "1.6.0",
     "orientation": "portrait",
     "icon": "./assets/app/adaptive-icon.png",
     "splash": {
@@ -18,13 +18,13 @@
     "assetBundlePatterns": ["**/*"],
     "ios": {
       "bundleIdentifier": "expo.leorod18.good-eats",
-      "buildNumber": "1.3.0",
+      "buildNumber": "1.6.0",
       "supportsTablet": false
     },
     "android": {
       "softwareKeyboardLayoutMode": "pan",
       "package": "expo.leorod18.good_eats",
-      "versionCode": 1,
+      "versionCode": 2,
       "adaptiveIcon": {
         "foregroundImage": "./assets/app/adaptive-icon.png",
         "backgroundColor": "#1E2025"

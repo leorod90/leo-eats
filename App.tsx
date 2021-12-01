@@ -8,18 +8,15 @@ import { enableScreens } from "react-native-screens";
 enableScreens();
 const { store, persistor } = stores();
 
+const splash = async () => {
+  try {
+    await SplashScreen.preventAutoHideAsync();
+  } catch (e) {
+    console.warn(e);
+  }
+};
+splash();
 export default () => {
-  const splash = async () => {
-    try {
-      await SplashScreen.preventAutoHideAsync();
-    } catch (e) {
-      console.warn(e);
-    }
-  };
-  useEffect(() => {
-    splash();
-  }, []);
-
   return (
     <Provider store={store}>
       <PersistGate loading={null} persistor={persistor}>

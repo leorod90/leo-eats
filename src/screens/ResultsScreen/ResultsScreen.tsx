@@ -19,7 +19,6 @@ export default function ResultsScreen({
   const { cuisine } = route.params;
   const { colors } = useTheme();
   const [searchData, setSearchData] = useState([]);
-  const [backgroundColor, setBackgroundColor] = useState("red");
 
   const data = useSelector((state: rootState) => state.dataReducer.data);
   const newData = useCallback(
@@ -31,10 +30,6 @@ export default function ResultsScreen({
   );
 
   useEffect(() => {
-    // const newData = data.filter((data: any) =>
-    //   data.cuisine.toLowerCase().includes(cuisine.toLowerCase())
-    // );
-    setBackgroundColor("green");
     setSearchData(newData);
   }, []);
 
@@ -63,7 +58,7 @@ export default function ResultsScreen({
   );
 
   return (
-    <View style={[styles.container, { backgroundColor }]}>
+    <View style={styles.container}>
       {searchData.length > 0 ? (
         <FlatList
           data={searchData}
