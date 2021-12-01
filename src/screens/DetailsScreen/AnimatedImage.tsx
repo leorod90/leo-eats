@@ -19,12 +19,6 @@ interface Props {
 export default function AnimatedImage({ label, image, translationY }: Props) {
   const inputRange = [-IMAGE_HEIGHT, 0, IMAGE_HEIGHT, IMAGE_HEIGHT + 1];
   const rStyle = useAnimatedStyle(() => {
-    // const translateY = interpolate(
-    //   translationY.value,
-    //   inputRange,
-    //   [0, 1, 0],
-    //   Extrapolate.CLAMP
-    // );
     const translateY = translationY.value;
     const platformScale = Platform.OS === "ios" ? 1.1 : 1;
     const scale = interpolate(
