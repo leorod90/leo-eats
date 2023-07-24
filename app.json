@@ -15,7 +15,9 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "bundleIdentifier": "expo.leorod18.good-eats",
       "buildNumber": "1.6.0",
@@ -33,6 +35,11 @@
     },
     "web": {
       "favicon": "./assets/app/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "75af3e50-74af-40c2-85e8-e3b5482a44df"
+      }
     }
   }
 }
