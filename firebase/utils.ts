@@ -1,4 +1,4 @@
-import Firebase from "firebase/app";
+import Firebase from "@react-native-firebase/app";
 import "firebase/auth";
 import "firebase/firestore";
 import "firebase/storage";

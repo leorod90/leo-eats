@@ -4,7 +4,7 @@ import appReducer from "./appReducer";
 import dataReducer from "./dataReducer";
 import { persistStore, persistReducer } from "redux-persist";
 import AsyncStorage from "@react-native-async-storage/async-storage";
-import storage from "redux-persist/lib/storage";
+// import storage from "redux-persist/lib/storage";
 import { composeWithDevTools } from "redux-devtools-extension";
 
 const persistConfig = {
